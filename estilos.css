@@ -38,6 +38,7 @@ body{
     display: center;
     text-align: center;
     font-weight: bolder;
+    margin-top: 6px;
 }
 
 .text-box h3{
@@ -45,15 +46,8 @@ body{
     display: center;
     text-align: center;
     font-weight: bold;
+    margin-top: 6px;
 }
-
-.text-box p{
-    width: 95%;
-    display: flex;
-    text-align: justify;
-    font-size: large;
-}
-
 
 footer{
     position:relative;
