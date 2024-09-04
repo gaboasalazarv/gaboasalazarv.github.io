@@ -169,11 +169,19 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `¡Felicidades! Has demostrado tener muy buenos conocimientos sobre el Bienestar Emocional, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
-    nextButton.innerHTML = "Jugar de Nuevo";
-    nextButton.style.display = 'block';
-    backButton.style.display = 'block';
-    confetti();
+    if (score>= 8){
+        questionElement.innerHTML = `¡Felicidades! Has demostrado tener muy buenos conocimientos sobre el Bienestar Emocional, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
+        nextButton.innerHTML = "Jugar de Nuevo";
+        nextButton.style.display = 'block';
+        backButton.style.display = 'block';
+        confetti();
+        } else {
+        questionElement.innerHTML = `Aunque no gané, estoy feliz por la oportunidad de participar y poner a prueba mis conocimientos sobre el Bienestar Emocional. ¡Recuerda que siempre podremos ayudarte accediendo al módulo!`;
+        nextButton.innerHTML = "Jugar de Nuevo";
+        nextButton.style.display = 'block';
+        backButton.style.display = 'block';
+        confetti();
+        }
 }
 
 function handleNextButton(){

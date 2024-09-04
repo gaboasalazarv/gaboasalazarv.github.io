@@ -191,14 +191,14 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    if (score>= 10){
+    if (score>= 8){
     questionElement.innerHTML = `¡Felicidades! Has demostrado tener muy buenos conocimientos sobre la Alimentación Saludable, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
     nextButton.innerHTML = "Jugar de Nuevo";
     nextButton.style.display = 'block';
     backButton.style.display = 'block';
     confetti();
     } else {
-    questionElement.innerHTML = `bueeee, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
+    questionElement.innerHTML = `Aunque no gané, estoy feliz por la oportunidad de participar y poner a prueba mis conocimientos sobre la Alimentación Saludable. ¡Recuerda que siempre podremos ayudarte accediendo al módulo!`;
     nextButton.innerHTML = "Jugar de Nuevo";
     nextButton.style.display = 'block';
     backButton.style.display = 'block';
