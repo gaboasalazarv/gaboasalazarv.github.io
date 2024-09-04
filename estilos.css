@@ -57,6 +57,10 @@ footer{
     top: 10%;
 }
 
+.a{
+    color: #000000;
+}
+
 ::-webkit-scrollbar{
     display: none;
 }
