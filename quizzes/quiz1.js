@@ -191,11 +191,19 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
+    if (score>= 10){
     questionElement.innerHTML = `¡Felicidades! Has demostrado tener muy buenos conocimientos sobre la Alimentación Saludable, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
     nextButton.innerHTML = "Jugar de Nuevo";
     nextButton.style.display = 'block';
     backButton.style.display = 'block';
     confetti();
+    } else {
+    questionElement.innerHTML = `bueeee, tu puntaje es ${score} de ${questions.length}. ¡Recuerda que siempre podremos ayudarte!`;
+    nextButton.innerHTML = "Jugar de Nuevo";
+    nextButton.style.display = 'block';
+    backButton.style.display = 'block';
+    confetti();
+    }
 }
 
 function handleNextButton(){
